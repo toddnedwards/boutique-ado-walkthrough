@@ -9,6 +9,7 @@ body {
     color: #555;
     font-family: 'Lato';
 }
+
 .icon {
     align-items: center;
     display: inline-flex;
@@ -26,7 +27,7 @@ body {
 }
 
 .shop-now-button {
-    background-color: black;
+    background: black;
     color: white;
     min-width: 260px;
 }
@@ -42,7 +43,7 @@ body {
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus {
-    background: black;
+    background: #222;
     color: white;
 }
 
@@ -50,18 +51,20 @@ body {
     color: #000 !important;
 }
 
-border-black {
-    border: 1px solid black Impo !important;
+.border-black {
+    border: 1px solid black !important;
 }
 
-/* Media queries */
+/* -------------------------------- Media Queries */
 
+/* Slightly larger container on xl screens */
 @media (min-width: 1200px) {
-    .container {
-        max-width: 80%;
-    }
+  .container {
+    max-width: 80%;
+  }
 }
 
+/* fixed top navbar only on medium and up */
 @media (min-width: 992px) {
     .fixed-top-desktop-only {
         position: fixed;
