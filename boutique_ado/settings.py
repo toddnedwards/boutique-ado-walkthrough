@@ -24,7 +24,7 @@ SECRET_KEY = 'django-insecure-h1b_pe2qgas7)j95jqcn(v_dind(-$w(-_htzu11*+@-u52wz9
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-toddnedward-boutiqueado-g8kyht7tgfp.ws-eu114.gitpod.io']
+ALLOWED_HOSTS = ['8000-toddnedward-boutiqueado-sbau53e9atk.ws.codeinstitute-ide.net']
 
 
 # Application definition
@@ -167,5 +167,11 @@ STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
+
+# Stripe
+
 FREE_DELIVERY_THRESHOLD = 50
 STANDARD_DELIVERY_PERCENTAGE = 10
+STRIPE_CURRENCY = 'usd'
+STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', '')
+STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', '')
