@@ -10,6 +10,7 @@ body {
     font-family: 'Lato';
 }
 
+/* From Bulma */
 .icon {
     align-items: center;
     display: inline-flex;
@@ -98,6 +99,8 @@ a.category-badge > span.badge:hover {
 input[name='q']::placeholder {
     color: #aab7c4;
 }
+
+/* Bootstrap toasts */
 
 .message-container {
     position: fixed;
